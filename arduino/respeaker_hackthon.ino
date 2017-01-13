@@ -96,8 +96,8 @@ void setup() {
   pixels.show();
 
   respeaker.begin(1,1,0);
-  respeaker.attach_touch_isr(touch_event);
-  respeaker.attach_spi_isr(spi_event);
+  respeaker.attach_touch_handler(touch_event);
+  respeaker.attach_spi_handler(spi_event);
 
   delay(1000);
   pixels.clear();
